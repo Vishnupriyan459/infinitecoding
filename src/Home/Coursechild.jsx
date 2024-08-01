@@ -25,20 +25,26 @@ const Coursechild = ({ course }) => {
       <div className={`h-[644.37px] rounded-2xl ${course.bg} relative`}>
         {/* Glass effect block for tools */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 p-4 bg-[#0f172a] bg-opacity-60 text-[#fff] rounded-xl backdrop-blur-lg z-10 w-[90%] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="bocker font-[400] text-[24px] leading-[27px]">
-            <span className="block font-semibold text-lg mb-2 ">Tools</span>
+          <div className="block font-[400] text-[24px] leading-[27px]">
+            <span className="block font-semibold text-lg mb-2">Tools</span>
             <ul className="pl-5 flex gap-3 items-center">
-              {course.tools.map((tool, index) => (
-                <li key={index} className="text-sm px-4 py-1 rounded-2xl bg-[#000] text-[18px] leading-[20px]">
-                  {tool}
+              {course.tools.length > 0 ? (
+                course.tools.map((tool, index) => (
+                  <li key={index} className="text-sm px-4 py-1 rounded-2xl bg-[#000] text-[18px] leading-[20px]">
+                    {tool}
+                  </li>
+                ))
+              ) : (
+                <li className="text-sm px-4 py-1 rounded-2xl bg-[#000] text-[18px] leading-[20px]">
+                  No tools listed
                 </li>
-              ))}
+              )}
             </ul>
 
             <div className="flex justify-between mt-4">
               <div>
                 <div className="block font-semibold text-lg mb-2">Duration</div>
-                <p className="text-[18px] leading-[20px] px-4 py-1 rounded-2xl bg-[#000] text-center ">
+                <p className="text-[18px] leading-[20px] px-4 py-1 rounded-2xl bg-[#000] text-center">
                   {course.duration} Weeks
                 </p>
               </div>
@@ -68,7 +74,8 @@ Coursechild.defaultProps = {
     detail: "A comprehensive bootcamp designed to take beginners to advanced Java developers.",
     title: "Java Bootcamp",
     bg: "bg-java",
-    tools: [], // Default to an empty array if no tools are provided
+    tools: [],
+    duration: "8"
   }
 };
 

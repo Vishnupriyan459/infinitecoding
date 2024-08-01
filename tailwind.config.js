@@ -9,8 +9,11 @@ module.exports = {
         'java': "url('/public/Course/java.svg')",
         'ai': "url('/public/Course/ai.svg')",
         'Automation': "url('/public/Course/Automation.svg')",
-        'FullStack': "url('/public/Course/FullStack.svg')"
-       
+        'FullStack': "url('/public/Course/FullStack.svg')",
+        'nadirprofile':"url('/public/nadirprofile.svg')",
+        'arnaudprofile':"url('/public/arnaudprofile.svg')",
+        'ronprofile':"url('/public/ronprofile.svg')",
+        
       },
     },
   },

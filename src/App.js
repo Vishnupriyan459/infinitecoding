@@ -3,7 +3,7 @@ import Home from './Home';
 
 function App() {
   return (
-    <div className='w-ful h-full p-2'> 
+    <div className='w-ful h-full '> 
       <Home />
     </div>
   );
