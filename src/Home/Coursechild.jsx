@@ -1,10 +1,18 @@
 import React from "react";
 import { IoMdArrowForward } from "react-icons/io";
+import { useLocation } from "react-router-dom";
 
 const Coursechild = ({ course }) => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
   return (
     <div className="w-[430.33px] h-[744.41px] flex-shrink-0 relative group">
-      <div className="absolute -top-1 -right-1 rounded-bl-xl bg-[#1B238D] w-[62px] h-[42px] flex justify-center items-center z-20">
+      <div
+        className={`absolute -top-1 -right-1 rounded-bl-xl ${
+          isHome ? "bg-[#1B238D]" : "bg-[#F3EFEF]"
+        } w-[62px] h-[42px] flex justify-center items-center z-20`}
+      >
         <div className="relative">
           <img
             src="Course/Corner.svg"
@@ -23,7 +31,6 @@ const Coursechild = ({ course }) => {
       </div>
 
       <div className={`h-[644.37px] rounded-2xl ${course.bg} relative`}>
-        {/* Glass effect block for tools */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 p-4 bg-[#0f172a] bg-opacity-60 text-[#fff] rounded-xl backdrop-blur-lg z-10 w-[90%] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="block font-[400] text-[24px] leading-[27px]">
             <span className="block font-semibold text-lg mb-2">Tools</span>
@@ -56,11 +63,11 @@ const Coursechild = ({ course }) => {
         </div>
       </div>
 
-      <div className="h-[100.4px] text-[#fff] p-4">
-        <h1 className="font-[400] text-[24px] leading-[27px]">
+      <div className="h-[100.4px] p-4">
+        <h1 className={`font-[400] text-[24px] leading-[27px] ${isHome ? "text-[#fff]" : "text-[#000]"}`}>
           {course.detail}
         </h1>
-        <p className="font-[400] text-[14px] leading-[20px] text-[#F3EFEF] text-opacity-60">
+        <p className={`font-[400] text-[14px] leading-[20px] ${isHome ? "text-[#F3EFEF] text-opacity-60" : "text-black"}`}>
           {course.title}
         </p>
       </div>

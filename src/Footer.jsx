@@ -6,8 +6,7 @@ import "./App.css";
 const Footer = () => {
   return (
     <div className="w-full rounded-t-2xl h-[55rem] bg-[#1B238D] pt-[1rem] flex flex-col justify-end gap-9 px-2 relative">
-      
-        <FloatingFooter />
+      <FloatingFooter />
       
 
       <div className="w-full h-3/4 bg-[#ffff] rounded-t-xl relative p-[2rem] space-y-6">
@@ -16,7 +15,7 @@ const Footer = () => {
           alt=""
           className="absolute -top-[7.5rem] left-[43%] w-[15rem] h-[15rem]"
         />
-        <img src="Logo(blue).svg" alt="" className="" />
+        <img src="blueLogo.svg" alt="" className="" />
         <div className="flex ">
           <form className="w-[70%] space-y-7">
             <ul className="list-[#1B238D] flex items-center">
@@ -58,9 +57,15 @@ const Footer = () => {
             <div className="w-[20rem] h-full rounded-2xl bg-[#1B238D] p-4 text-[#ffff]">
               <form className="space-y-6">
                 <div className="font-inter">
-                  <p className="font-[500] text-[10px] leading-[14px] ">Message</p>
-                  <h1 className="text-[28px] leading-[36px] font-[400]"><span className="text-opacity-50 ">Seeking for more info?</span>
-                     Write a message here</h1>
+                  <p className="font-[500] text-[10px] leading-[14px] ">
+                    Message
+                  </p>
+                  <h1 className="text-[28px] leading-[36px] font-[400]">
+                    <span className="text-opacity-50 ">
+                      Seeking for more info?
+                    </span>
+                    Write a message here
+                  </h1>
                 </div>
                 <div className="space-y-3">
                   <div className="bg-[#1B238D] border border-[#ffff] border-opacity-50 rounded-2xl h-[3.5rem] w-full p-1 space-y-1 px-2 ">
@@ -82,11 +87,14 @@ const Footer = () => {
                       className="bg-[#1B238D] text-[#fff] text-opacity-50 border-none w-full rounded-xl px-2 py-1 focus:outline-none resize-none overflow-hidden"
                     />
                   </div>
-                  <div className='flex items-strech  h-9 mt-8'>
-                    <button className='bg-[#fff] rounded-xl px-2'><img src="plus.svg" alt="" /></button>
-                    <button className='bg-[#fff] rounded-xl text-[#1B238D] px-5 text-center' >Send the Message</button>
-                    
-        </div>
+                  <div className="flex items-strech  h-9 mt-8">
+                    <button className="bg-[#fff] rounded-xl px-2">
+                      <img src="plus.svg" alt="" />
+                    </button>
+                    <button className="bg-[#fff] rounded-xl text-[#1B238D] px-5 text-center">
+                      Send the Message
+                    </button>
+                  </div>
                 </div>
               </form>
               <p className=" text-white mt-4 text-opacity-50">Privacy</p>

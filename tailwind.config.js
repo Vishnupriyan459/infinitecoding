@@ -13,7 +13,7 @@ module.exports = {
         'nadirprofile':"url('/public/nadirprofile.svg')",
         'arnaudprofile':"url('/public/arnaudprofile.svg')",
         'ronprofile':"url('/public/ronprofile.svg')",
-        
+        'Infobanner':"url('/public/info/banner.svg')"
       },
     },
   },
