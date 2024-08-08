@@ -17,7 +17,7 @@ const Main = () => {
         <Cplus />
         <Quote />
         <Challenges />
-        <img src="/info/quotethree.svg" alt="" className="w-full h-[600px]" />
+        <img src="/info/quotethree.svg" alt="" className="w-full xl:h-[600px]" />
         <Process />
       </div>
     

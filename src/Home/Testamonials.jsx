@@ -4,9 +4,9 @@ import ChatTrigger2 from "./ChatTrigger2";
 
 const Testimonials = () => {
   return (
-    <div className="w-[100%] h-[671px] bg-[#F3EFEF] rounded-3xl p-3 \">
-      <div className="w-[95%] h-full mx-auto flex">
-        <div className="flex justify-center space-y-[5rem] flex-col w-[30%]">
+    <div className="w-[100%] lg:h-[671px] bg-[#F3EFEF] rounded-3xl p-3 \">
+      <div className="w-[95%] h-full mx-auto md:flex lg:justify-between">
+        <div className="flex justify-center space-y-[5rem] flex-col xl:w-[30%]">
           <ul className="list-[#1B238D] flex items-center">
             <li className="font-[800] text-[16px] text-[#1B238D]">
               <span className="text-[2rem]">•</span> Testimonial
@@ -25,7 +25,7 @@ const Testimonials = () => {
             </button>
           </div>
         </div>
-        <div className="relative w-[60%] flex items-center overflow-hidden  ">
+        <div className="relative xl:w-[65%] flex items-center overflow-hidden  ">
           
             <ChatTrigger />
             <ChatTrigger2 />

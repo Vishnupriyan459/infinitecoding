@@ -10,7 +10,11 @@ const Info = () => {
     
      <Main />
     <Contact />
+    <div>
     <Outcome />
+
+    </div>
+    
     <Course />
     <Footer />
 

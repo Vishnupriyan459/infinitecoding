@@ -9,24 +9,33 @@ import Contact from "./Home/Contact";
 import Testamonials from "./Home/Testamonials";
 import Footer from "./Footer";
 
-
 const Home = () => {
   return (
     <>
-    <div className="p-2 ">
-      <div className="bg-[#1B238D] w-full h-[1240px] rounded-t-xl rounded-br-0 p-2">
-        <Navbar />
-        <Banner />
+      <div className=" space-y-0 p-2">
+        <div className=" bg-[#1B238D] w-full pb-[5rem] rounded-t-xl rounded-br-0 p-2 overflow-x-hidden">
+          <Navbar />
+          <Banner />
+        </div>
+        
+          <Services />
+        
+        <div className="">
+          <Vision />
+        </div>
+        <div className="">
+          <Course />
+        </div>
+        <div>
+        <Whycompo />
+        </div>
+        
+        <Contact />
+        <div className="py-2">
+        <Testamonials />
+        </div>
       </div>
-      <Services />
-      <Vision />
-      <Course />
-      <Whycompo />
-      <Contact />
-      <Testamonials />
-    </div>
-    <Footer />
-      
+      <Footer />
     </>
   );
 };

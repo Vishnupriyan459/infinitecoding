@@ -19,7 +19,7 @@ const details = [
 
 const ChatTrigger2 = () => {
   return (
-    <div className="h-[800px] w-[450px] flex flex-col gap-9 items-center">
+    <div className=" xl:h-[800px] xl:w-[450px] hidden xl:flex flex-col gap-9 items-center">
       
       {details.map((detail, index) => (
         <Feedback key={index} details={detail} />

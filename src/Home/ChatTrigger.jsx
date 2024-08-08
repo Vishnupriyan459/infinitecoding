@@ -10,7 +10,7 @@ const details = {
 
 const ChatTrigger = () => {
   return (
-    <div className='h-[800px] w-[450px] flex flex-col gap-9 items-center'>
+    <div className=' h-[500px]  md:h-[600px] md:w-auto  lg:h-[700px] lg:w-[450px] flex flex-col gap-9  items-center'>
       <ChatObj />
       <Feedback details={details} />
       <ChatObj />

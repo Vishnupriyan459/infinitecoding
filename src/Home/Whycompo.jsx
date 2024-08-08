@@ -35,9 +35,9 @@ const Whycompo = () => {
     <div className="mx-auto w-[90%] m-5">
       {" "}
       {/* Center the grid container and set its width */}
-      <div className="grid grid-cols-2 gap-5 justify-items-center">
-        <div className="w-[592.8px] h-[120.44px]  flex px-5 items-center">
-          <div className=" font-[300] text-[67px] leading-[67px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-items-center">
+        <div className="max-md:justify-self-start lg:w-[452px] lg:h-[100px] xl:w-[592.8px] xl:h-[120.44px]   flex md:px-5 md:items-center">
+          <div className=" font-[300] text-[30px] leading-[27px] md:text-[47px] md:leading-[37px] lg:text-[52px] lg:leading-[57px] xl:text-[67px] xl:leading-[67px]">
           • Why <br />
           Infinite Coding?
           </div>

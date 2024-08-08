@@ -13,34 +13,34 @@ const Footer = () => {
         <img
           src="Star.svg"
           alt=""
-          className="absolute -top-[7.5rem] left-[43%] w-[15rem] h-[15rem]"
+          className="hidden lg:block absolute -top-[7.5rem] left-[43%] w-[15rem] h-[15rem]"
         />
         <img src="blueLogo.svg" alt="" className="" />
         <div className="flex ">
-          <form className="w-[70%] space-y-7">
+          <form className="w-full lg:w-[65%] xl:w-[70%] space-y-7">
             <ul className="list-[#1B238D] flex items-center">
-              <li className="font-[400] text-[25px] w-[30rem]">
-                <span className="text-[2rem] text-[#1B238D]">•</span>Want to
+              <li className="font-[400] text-[1rem] md:text-[25px] lg:w-[30rem]">
+                <span className="text-[1rem] md:text-[2rem] text-[#1B238D]">•</span>Want to
                 receive Infinite Coding news and updates?
               </li>
             </ul>
-            <div className="w-[30rem] space-y-2">
+            <div className="w-full md:w-[20rem] lg:w-[30rem] space-y-2">
               <input
                 type="text"
-                className="bg-[#000] text-[#fff] text-opacity-30 h-[54px] w-[437px] rounded-2xl px-5"
+                className="bg-[#000] text-[#fff] text-opacity-30 h-[34px] sm:h-[54px] sm:w-[320px]  lg:w-[437px] rounded-xl sm:rounded-2xl px-5"
                 placeholder="Name"
               />
               <input
                 type="tel"
                 maxLength={13}
-                className="bg-[#000] text-[#fff] text-opacity-30 h-[54px] w-[437px] rounded-2xl px-5"
+                className="bg-[#000] text-[#fff] text-opacity-30 h-[34px] sm:h-[54px] sm:w-[320px]  lg:w-[437px] rounded-xl sm:rounded-2xl px-5"
                 placeholder="Phone"
               />
             </div>
             <div className="flex items-center space-x-2">
               <input type="radio" id="yes" name="news" className="h-5 w-5" />
               <label htmlFor="agree" className="">
-                <span className="text-[#A4A5B2]">I agree with the </span>
+                <span className="text-[#A4A5B2] ">I agree with the </span>
                 <span className="text-[#1B238D]">privacy statement</span>
               </label>
             </div>
@@ -53,7 +53,7 @@ const Footer = () => {
               </button>
             </div>
           </form>
-          <div className="w-[30%] space-y-8">
+          <div className="hidden lg:block lg:w-[30%] xl:w-[30%] space-y-8">
             <div className="w-[20rem] h-full rounded-2xl bg-[#1B238D] p-4 text-[#ffff]">
               <form className="space-y-6">
                 <div className="font-inter">
@@ -109,7 +109,7 @@ const Footer = () => {
             </p>
             <p>Privacy Statement</p>
           </div>
-          <div className="w-[3rem] h-[3rem] rounded-2xl bg-[#000] flex justify-center items-center">
+          <div className="hidden lg:flex w-[3rem] h-[3rem] rounded-2xl bg-[#000] flex justify-center items-center">
             <FaArrowDownLong className="text-[#fff] -rotate-180" />
           </div>
         </div>
